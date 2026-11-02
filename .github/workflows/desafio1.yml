@@ -17,6 +17,8 @@ jobs:
       - name: Docker Scout
         uses: docker/scout-action@v1
         with:
+          username: moialc12102
+          password: ${{ secrets.DOKER_HUB_KEY }}
           command: cves
           image: ${{ github.event.inputs.image }}
           summary: true
