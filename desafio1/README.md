@@ -1,0 +1,2 @@
+Criei um novo workflow que não pode iniciar automaticamente, precisa ter um input para recer uma imagem docker e rodar a imagem. 
+Plus. Para que fizer o desafio acima, criar um 3 step usando workflow compartilhado para usar docker scout para mostrar um relatorio de vulnerabilidade da imagem escolhida no imput acima 
