@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: pull docker imagem
-        run: docker pull ${{ github.event.inputs.image }}
+        run: docker pull ${{ github.event.inputs.image }} && docker image ls
