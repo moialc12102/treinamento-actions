@@ -9,8 +9,15 @@ on:
         default: 'python'
 
 jobs:
-  desafio1:
+  pullDockerImage:
     runs-on: ubuntu-latest
     steps:
       - name: pull docker imagem
         run: docker pull ${{ github.event.inputs.image }} && docker image ls
+      - name: Docker Scout
+        uses: docker/scout-action@v1
+        with:
+          command: cves
+          image: ${{ github.event.inputs.image }}
+          summary: true
+
