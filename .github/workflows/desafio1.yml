@@ -2,15 +2,15 @@ name: desafio 1
 
 on:
   workflow_dispatch:
-  inputs:
-    image:
-      description: 'Digite a imagem do docker que deseja baixar'
-      required: true
-      default: 'python'
+    inputs:
+      image:
+        description: 'Digite a imagem do docker que deseja baixar'
+        required: true
+        default: 'python'
 
 jobs:
   desafio1:
     runs-on: ubuntu-latest
     steps:
       - name: pull docker imagem
-        run: docker pull ${{ inputs.image }}
+        run: docker pull ${{ github.event.inputs.image }}
