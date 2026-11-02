@@ -1,0 +1,8 @@
+name: desafio 1
+
+jobs:
+  desafio1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull docker imagem
+        run: docker pull python
