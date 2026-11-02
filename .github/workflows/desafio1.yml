@@ -1,5 +1,8 @@
 name: desafio 1
 
+on:
+  workflow_dispatch:
+
 jobs:
   desafio1:
     runs-on: ubuntu-latest
